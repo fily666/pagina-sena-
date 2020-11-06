@@ -57,7 +57,7 @@
         }
 
         .logo {
-            color: #f4511e;
+            color: black;
             font-size: 200px;
         }
 
@@ -271,7 +271,7 @@
 
     </div>
 
-    <!-- Container (Que es ide Section) -->
+    <!-- Container (Que es ide Section ide) -->
     <div id="about" class="container-fluid bg-grey">
         <div class="row">
             <div class="col-sm-8">
@@ -295,7 +295,7 @@
         </div>
     </div>
 
-    <!-- Container (Pricing Section) -->
+    <!-- Container (ides  Section) -->
     <div id="pricing" class="container-fluid">
         <div class="text-center">
             <h2>Los principales IDEs de desarrollo son:</h2>
@@ -312,12 +312,11 @@
                         </div>
                         <div class="panel-body">
                             <div class="row">
-                                <img src="{{ $product->grafica }}" width="90%" height="200px">
+                                <img src="{{ $product->logo }}" width="90%" height="200px">
                             </div>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            laboreolore magna aliqua. Ut enim ad minim veniam
+                            Para conocer las caracteristivas
                             <div>
-                                <a class="btn btn-info" href="{{ route('products.show',$product->id) }}">Show</a>
+                                <a class="" href="{{ route('products.show',$product->id) }}">Ver mas</a>
                             </div>
                         </div>
                     </div>
@@ -328,19 +327,17 @@
 
                 <div class="col-sm-4">
                     <div class="panel panel-default text-center">
-                        <div class="panel-heading">
-                            <h1>Basic</h1>
-                        </div>
+
                         <div class="panel-body">
 
-                            <div class="row">
-                                <img src="https://blog.mailup.es/wp-content/uploads/2017/12/codice-05-cover.jpg" style="width: 100%;">
+                            <div class="container-fluid">
+                                <span class="glyphicon glyphicon-plus logo"></span>
                             </div>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            laboreolore magna aliqua. Ut enim ad minim veniam
+
                         </div>
                     </div>
                 </div>
+
 
             </div>
         </div>
@@ -367,13 +364,13 @@
         </div>
     </div>
 
-    <!-- Container (Pricing Section) -->
+    <!-- Container (editores Section) -->
     <div id="pricing" class="container-fluid">
         <div class="text-center">
             <h2>Los principales editores de texto son:</h2>
         </div>
         <div class="row slideanim">
-        <div class="col-xs-12">
+            <div class="col-xs-12">
                 @foreach ($products as $product)
                 @if ($product->tipo == 2)
 
@@ -384,12 +381,11 @@
                         </div>
                         <div class="panel-body">
                             <div class="row">
-                                <img src="{{ $product->grafica }}" width="90%" height="200px">
+                                <img src="{{ $product->logo }}" width="90%" height="200px">
                             </div>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            laboreolore magna aliqua. Ut enim ad minim veniam
+                            Para conocer las caracteristivas
                             <div>
-                                <a class="btn btn-info" href="{{ route('products.show',$product->id) }}">Show</a>
+                                <a class="" href="{{ route('products.show',$product->id) }}">Ver mas</a>
                             </div>
                         </div>
                     </div>
@@ -400,20 +396,17 @@
 
                 <div class="col-sm-4">
                     <div class="panel panel-default text-center">
-                        <div class="panel-heading">
-                            <h1>Basic</h1>
-                        </div>
+
                         <div class="panel-body">
 
-                            <div class="row">
-                                <img src="https://blog.mailup.es/wp-content/uploads/2017/12/codice-05-cover.jpg" style="width: 100%;">
+                            <div class="container-fluid">
+                                <span class="glyphicon glyphicon-plus logo"></span>
                             </div>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            laboreolore magna aliqua. Ut enim ad minim veniam
+
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </div>

@@ -251,7 +251,7 @@
 
     </div>
 
-    <!-- Container (About Section) -->
+    <!-- Container (historia Section) -->
     <div id="about" class="container-fluid bg-grey">
         <div class="row">
             <div class="col-sm-8">
@@ -265,7 +265,7 @@
         </div>
     </div>
 
-    <!-- Container (Portfolio Section) -->
+    <!-- Container (caracteristicas Section) -->
     <div id="portfolio" class="container-fluid text-center">
         <div class="row text-center slideanim">
             <div class="col-sm-4">
@@ -282,32 +282,32 @@
             </div>
             <div class="col-sm-4">
                 <div class="thumbnail">
-                    <p><strong>herramientas</strong></p>
+                    <p><strong>Herramientas</strong></p>
                     <p>{{ $product->herramientas }}</p>
                 </div>
             </div>
-        </div><br>
+        </div>
     </div>
 
     <!-- Container (Pricing Section) -->
     <div id="pricing" class="container-fluid bg-grey">
         <div class="text-center">
-            <h2>precio</h2>
+            <h2>Precio</h2>
             {{ $product->costos }}
             <br> <br>
             <p><img src="{{ $product->costosimg }}" width="80%"></p>
         </div>
     </div>
-    <!-- Container (Contact Section) -->
+    <!-- Container (grafica Section) -->
     <div id="contact" class="container-fluid ">
         <div class="row">
             <div class="col-sm-6">
-                <h3>Buscar graficas estadísticas del porcentaje de su utilización a nivel mundial</h3>
+                <h3>Que tan utilizado es {{ $product->name }} en el mundo </h3>
                 <br>
                 <p><img src="{{ $product->grafica }}" width="90%"></p>
             </div>
             <div class="col-sm-6">
-                <h3>Requisitos mínimos de hardware y software para su instalaciónRequisitos mínimos de hardware y software para su instalación:</h3>
+                <h3>Requisitos mínimos de hardware y software para su instalación:</h3>
                 <br>
                 <p>{{ $product->requerimientos }}</p>
 
@@ -315,12 +315,13 @@
         </div>
     </div>
 
+    <!-- Container (video q no funciona Section) -->
     <div id="contact" class="container-fluid bg-grey">
         <h2 class="text-center">Video de instalacion</h2>
         <div class="row">
             <div class="col-sm-2"></div>
             <div class="col-sm-8">
-                {{ $product->video }} <br>
+                <a href="{{ $product->video }}">{{ $product->video }}</a>  <br>
                 <iframe width="100%" height="415" src="{{ $product->video }}" allowfullscreen></iframe>
             </div>
             <div class="col-sm-2"></div>
